@@ -1,0 +1,16 @@
+Host cedes.connect.relayr.io 
+	HostName cedes.connect.relayr.io
+	IdentityFile ~/.ssh/ssh_simon
+
+Host cedes
+        User remoteaccess
+        HostName cedes.connect.relayr.io
+        IdentityFile ~/.ssh/ssh_simon
+
+Host cedes-*
+        Port 3791
+        ProxyJump cedes
+        User cedes
+        StrictHostKeyChecking no
+        UserKnownHostsFile /dev/null
+        IdentityFile ~/.ssh/id_cedes_ecdsa

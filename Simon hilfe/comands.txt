@@ -1,0 +1,9 @@
+curl -ss -H X-API-Token:RUJXVTXgaIFEcyvSQfQIlysNylCrEIVp https://cedes.connect.relayr.io/admin/curl -ss -H X-API-Token:RUJXVTXgaIFEcyvSQfQIlysNylCrEIVp https://cedes.connect.relayr.io/admin/
+ssh -i ~/.ssh/cedes_id_ecdsa -p 3791 -J remoteaccess@cedes.connect.relayr.io -l cedes -- 172.27.128.22
+systemctl status gwa*
+
+D09FD9410460
+d0:9f:d9:41:04:60 172.27.128.47
+systemctl status gwa*
+D09FD941047A
+d0:9f:d9:41:04:7a 
